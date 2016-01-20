@@ -16,6 +16,10 @@
 		8E4DA35A1C4F79F200F93DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4DA3581C4F79F200F93DF7 /* LaunchScreen.storyboard */; };
 		8E4DA3651C4F79F300F93DF7 /* AttributeLabelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3641C4F79F300F93DF7 /* AttributeLabelDemoTests.m */; };
 		8E4DA3701C4F79F300F93DF7 /* AttributeLabelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA36F1C4F79F300F93DF7 /* AttributeLabelDemoUITests.m */; };
+		8E4DA3831C4F7A5C00F93DF7 /* AttributeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3801C4F7A5C00F93DF7 /* AttributeLabel.m */; };
+		8E4DA3841C4F7A5C00F93DF7 /* TextPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3821C4F7A5C00F93DF7 /* TextPart.m */; };
+		8E4DA3871C4F7B7F00F93DF7 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3861C4F7B7F00F93DF7 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E4DA38E1C4F7C7C00F93DF7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4DA38D1C4F7C7C00F93DF7 /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		8E4DA36B1C4F79F300F93DF7 /* AttributeLabelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributeLabelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4DA36F1C4F79F300F93DF7 /* AttributeLabelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeLabelDemoUITests.m; sourceTree = "<group>"; };
 		8E4DA3711C4F79F300F93DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4DA37F1C4F7A5C00F93DF7 /* AttributeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeLabel.h; sourceTree = "<group>"; };
+		8E4DA3801C4F7A5C00F93DF7 /* AttributeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeLabel.m; sourceTree = "<group>"; };
+		8E4DA3811C4F7A5C00F93DF7 /* TextPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextPart.h; sourceTree = "<group>"; };
+		8E4DA3821C4F7A5C00F93DF7 /* TextPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextPart.m; sourceTree = "<group>"; };
+		8E4DA3851C4F7B7F00F93DF7 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		8E4DA3861C4F7B7F00F93DF7 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		8E4DA38D1C4F7C7C00F93DF7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4DA38E1C4F7C7C00F93DF7 /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 		8E4DA33B1C4F79F200F93DF7 = {
 			isa = PBXGroup;
 			children = (
+				8E4DA38D1C4F7C7C00F93DF7 /* libicucore.tbd */,
 				8E4DA3461C4F79F200F93DF7 /* AttributeLabelDemo */,
 				8E4DA3631C4F79F300F93DF7 /* AttributeLabelDemoTests */,
 				8E4DA36E1C4F79F300F93DF7 /* AttributeLabelDemoUITests */,
@@ -103,6 +116,7 @@
 		8E4DA3461C4F79F200F93DF7 /* AttributeLabelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E4DA37E1C4F7A5C00F93DF7 /* AttributeLabel */,
 				8E4DA34A1C4F79F200F93DF7 /* AppDelegate.h */,
 				8E4DA34B1C4F79F200F93DF7 /* AppDelegate.m */,
 				8E4DA34D1C4F79F200F93DF7 /* ViewController.h */,
@@ -141,6 +155,19 @@
 				8E4DA3711C4F79F300F93DF7 /* Info.plist */,
 			);
 			path = AttributeLabelDemoUITests;
+			sourceTree = "<group>";
+		};
+		8E4DA37E1C4F7A5C00F93DF7 /* AttributeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA3851C4F7B7F00F93DF7 /* RegexKitLite.h */,
+				8E4DA3861C4F7B7F00F93DF7 /* RegexKitLite.m */,
+				8E4DA37F1C4F7A5C00F93DF7 /* AttributeLabel.h */,
+				8E4DA3801C4F7A5C00F93DF7 /* AttributeLabel.m */,
+				8E4DA3811C4F7A5C00F93DF7 /* TextPart.h */,
+				8E4DA3821C4F7A5C00F93DF7 /* TextPart.m */,
+			);
+			path = AttributeLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4DA3871C4F7B7F00F93DF7 /* RegexKitLite.m in Sources */,
 				8E4DA3551C4F79F200F93DF7 /* AttributeLabelDemo.xcdatamodeld in Sources */,
 				8E4DA34F1C4F79F200F93DF7 /* ViewController.m in Sources */,
+				8E4DA3831C4F7A5C00F93DF7 /* AttributeLabel.m in Sources */,
+				8E4DA3841C4F7A5C00F93DF7 /* TextPart.m in Sources */,
 				8E4DA34C1C4F79F200F93DF7 /* AppDelegate.m in Sources */,
 				8E4DA3491C4F79F200F93DF7 /* main.m in Sources */,
 			);
